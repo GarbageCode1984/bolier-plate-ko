@@ -12,7 +12,7 @@ app.use(express.json())
 
 
 const mongoose = require('mongoose')
-mongoose.connect(config.mongoURI)
+mongoose.connect(config)
 .then(() => console.log('MongoDB Connected...'))
 .catch(err => console.log(err))
 
